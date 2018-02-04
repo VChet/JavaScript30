@@ -22,7 +22,7 @@ function paintToCanvas() {
   canvas.width = width;
   canvas.height = height;
 
-  setInterval(() => {
+  return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
     // take the pixels out
     let pixels = ctx.getImageData(0, 0, width, height);
